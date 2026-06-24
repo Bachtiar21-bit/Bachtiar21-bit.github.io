@@ -3,77 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio IT & Development</title>
+    <title>Moch Bachtiar Januar | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Navigasi (Navbar) -->
     <nav>
-        <div class="logo">Portofolio.</div>
+        <div class="logo">Moch Bachtiar Januar</div>
         <ul class="nav-links">
-            <li><a href="#beranda">Beranda</a></li>
-            <li><a href="#tentang">Tentang</a></li>
-            <li><a href="#proyek">Proyek</a></li>
-            <li><a href="#kontak">Kontak</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <section id="beranda" class="hero">
-        <div class="hero-content">
-            <h1>Halo, Saya Bachtiar</h1>
-            <p>Mahasiswa & Pengembang Aplikasi | Fokus pada Mobile Development, Big Data, & Analisis Sistem</p>
-            <a href="#proyek" class="btn">Lihat Karya Saya</a>
-        </div>
-    </section>
-
-    <section id="tentang" class="about">
-        <h2>Tentang Saya</h2>
-        <p>Saya adalah seorang mahasiswa yang memiliki minat besar dalam memecahkan masalah komputasi, mengolah data berskala besar, dan membangun solusi perangkat lunak yang efisien. Fokus utama saya terletak pada pengembangan aplikasi seluler yang dinamis serta analisis data untuk menemukan wawasan yang mendalam.</p>
-        <div class="skills">
-            <span>Flutter & Dart</span>
-            <span>PySpark</span>
-            <span>PHP</span>
-             <span>C++</span>
-             <span>PYTON</span>
-            <span>UI/UX Design</span>
-        </div>
-    </section>
-      <div class="project-card">
-          <h2>Proyek Terbaru</h2>
-                <img src="proyek2.jpg" alt="Analisis Big Data Curah Hujan Jawa Barat" class="project-img">
-                <h3>Analisis Big Data Curah Hujan Jawa Barat (Periode 2015 – 2024)</h3>
-                <p>Implementasi pengolahan dan analisis data berskala besar (Big Data) untuk memetakan histori dan tren curah hujan di wilayah Jawa Barat menggunakan PySpark. Proyek ini mencakup pembersihan data, kalkulasi rata-rata intensitas, dan visualisasi grafik stasiun BMKG.</p>
-                <div class="tags">
-                    <span>PySpark</span>
-                    <span>Big Data</span>
-                    <span>Data Analysis</span>
+    <!-- Bagian Hero (Beranda) -->
+    <header class="hero-section">
+        <div class="hero-container">
+            <div class="hero-img-box">
+                <!-- Ganti dengan foto wajah Anda, pastikan namanya profil.jpg di GitHub -->
+                <img src="profil.jpg" alt="Moch Bachtiar Januar" class="profile-img">
+            </div>
+            <div class="hero-text">
+                <h1>Hallo semua, saya <span class="highlight">Moch Bachtiar Januar</span></h1>
+                <p class="sub-title">Mobile Developer & Data Analyst</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-solid">View Project</a>
+                    <a href="#contact" class="btn btn-outline">Download CV</a>
                 </div>
             </div>
+        </div>
+    </header>
 
-    <section id="proyek" class="projects">
-        <div class="project-grid">
+    <!-- Bagian Tentang Saya (About) -->
+    <section id="about" class="section-container">
+        <h2 class="section-title">Tentang Saya</h2>
+        <p class="about-text">
+            Saya memiliki ketertarikan yang besar terhadap dunia teknologi karena sifatnya yang selalu berkembang dan penuh tantangan. Setiap perubahan dan inovasi baru menjadi motivasi bagi saya untuk terus belajar dan meningkatkan kemampuan. Mulai dari proses coding, merancang sistem, hingga membangun aplikasi, saya menikmati setiap tahap dalam menciptakan solusi digital. Bagi saya, teknologi bukan hanya tentang program dan perangkat, tetapi tentang bagaimana menciptakan sesuatu yang bermanfaat, efisien, dan dapat digunakan oleh banyak orang untuk mempermudah aktivitas mereka.
+        </p>
+    </section>
+
+    <!-- Bagian Keahlian (Skills) -->
+    <section id="skills" class="section-container">
+        <h2 class="section-title">Keahlian</h2>
+        <div class="skills-grid">
+            <div class="skill-card"><span>Flutter</span></div>
+            <div class="skill-card"><span>Dart</span></div>
+            <div class="skill-card"><span>PySpark</span></div>
+            <div class="skill-card"><span>Python</span></div>
+            <div class="skill-card"><span>Big Data</span></div>
+            <div class="skill-card"><span>Linux</span></div>
+        </div>
+    </section>
+
+    <!-- Bagian Proyek (Projects) -->
+    <section id="projects" class="section-container">
+        <h2 class="section-title">Project</h2>
+        <div class="projects-list">
             
-            <div class="project-card">
-                <img src="proyek1.jpeg" alt="Aplikasi Belanja Kebutuhan Pokok" class="project-img">
-                <h3>Aplikasi Belanja Kebutuhan Pokok</h3>
-                <p>Aplikasi mobile berbasis Flutter dengan fitur pemilihan kuantitas barang, keranjang belanja dinamis, dan sistem pelacakan pesanan riwayat selesai. Terdiri dari berbagai modul fungsional seperti halaman kategori buah.</p>
-                <div class="tags">
-                    <span>Flutter</span>
-                    <span>Dart</span>
+            <!-- Kartu Proyek 1 (Horizontal Style) -->
+            <div class="project-horizontal-card">
+                <div class="proj-img-side">
+                    <img src="proyek1.jpg" alt="Aplikasi Belanja Kebutuhan Pokok">
+                </div>
+                <div class="proj-text-side">
+                    <h3>Aplikasi Belanja Kebutuhan Pokok</h3>
+                    <p>Aplikasi mobile berbasis Flutter dengan fitur pemilihan kuantitas barang, keranjang belanja dinamis, dan sistem pelacakan pesanan riwayat selesai. Terdiri dari berbagai modul fungsional seperti halaman kategori buah.</p>
+                    <p class="tech-stack"><strong>Tech Stack:</strong> Flutter, Dart, UI/UX Design</p>
+                </div>
+            </div>
+
+            <!-- Kartu Proyek 2 (Horizontal Style) -->
+            <div class="project-horizontal-card">
+                <div class="proj-img-side">
+                    <img src="proyek2.jpg" alt="Analisis Big Data Curah Hujan">
+                </div>
+                <div class="proj-text-side">
+                    <h3>Analisis Big Data Curah Hujan Jawa Barat (Periode 2015 – 2024)</h3>
+                    <p>Implementasi pengolahan dan analisis data berskala besar (Big Data) untuk memetakan histori dan tren curah hujan di wilayah Jawa Barat menggunakan PySpark. Proyek ini mencakup pembersihan data, kalkulasi rata-rata intensitas, dan visualisasi grafik stasiun BMKG.</p>
+                    <p class="tech-stack"><strong>Tech Stack:</strong> PySpark, Python, Big Data, Data Analysis</p>
                 </div>
             </div>
 
         </div>
     </section>
 
-    <section id="kontak" class="contact">
-        <h2>Hubungi Saya</h2>
-        <p>Tertarik untuk berdiskusi lebih lanjut mengenai pengembangan aplikasi atau kolaborasi proyek?</p>
-        <a href="mailto:emailanda@gmail.com" class="btn">Kirim Email</a>
+    <!-- Bagian Kontak -->
+    <section id="contact" class="section-container contact-section">
+        <h2 class="section-title">Contact</h2>
+        <p>Mari terhubung! Hubungi saya untuk kolaborasi proyek atau peluang kerja.</p>
+        <a href="mailto:emailanda@gmail.com" class="btn btn-solid">Hubungi Lewat Email</a>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Bachtiar. Dibuat dengan HTML & CSS.</p>
+        <p>&copy; 2026 Moch Bachtiar Januar. All Rights Reserved.</p>
     </footer>
 
 </body>
