@@ -4,290 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moch Bachtiar Januar | Portfolio</title>
-    <style>
-        /* CSS Styling */
-        :root {
-            --primary-color: #2563eb;
-            --text-color: #1f2937;
-            --bg-color: #ffffff;
-            --bg-alt: #f3f4f6;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            scroll-behavior: smooth;
-        }
-
-        body {
-            color: var(--text-color);
-            background-color: var(--bg-color);
-            line-height: 1.6;
-        }
-
-        /* Navbar */
-        header {
-            background-color: rgba(255, 255, 255, 0.95);
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 50px;
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-
-        .logo {
-            font-size: 20px;
-            font-weight: bold;
-            color: var(--text-color);
-            text-decoration: none;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 25px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: var(--text-color);
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        nav ul li a:hover {
-            color: var(--primary-color);
-        }
-
-        /* Sections */
-        section {
-            padding: 100px 20px 60px;
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 32px;
-            margin-bottom: 40px;
-            color: var(--text-color);
-        }
-
-        /* Hero Section */
-        .hero {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            min-height: 100vh;
-            gap: 50px;
-        }
-
-        .hero-text {
-            flex: 1;
-        }
-
-        .hero-text h1 {
-            font-size: 42px;
-            margin-bottom: 10px;
-            line-height: 1.2;
-        }
-
-        .hero-text p {
-            font-size: 22px;
-            color: #4b5563;
-            margin-bottom: 30px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 12px 24px;
-            background-color: var(--primary-color);
-            color: #fff;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: 600;
-            transition: background 0.3s;
-            margin-right: 10px;
-            margin-bottom: 10px;
-        }
-
-        .btn:hover {
-            background-color: #1d4ed8;
-        }
-
-        .btn-outline {
-            background-color: transparent;
-            color: var(--primary-color);
-            border: 2px solid var(--primary-color);
-        }
-
-        .btn-outline:hover {
-            background-color: var(--primary-color);
-            color: #fff;
-        }
-
-        .hero-img {
-            flex: 1;
-            text-align: center;
-        }
-
-        .hero-img img {
-            width: 300px;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 50%;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-        }
-
-        /* About Section */
-        #about {
-            background-color: var(--bg-alt);
-            border-radius: 12px;
-            padding: 60px 40px;
-            margin-top: 20px;
-        }
-
-        .about-text {
-            text-align: justify;
-            max-width: 800px;
-            margin: 0 auto;
-            font-size: 17px;
-            color: #374151;
-        }
-
-        /* Skills Section */
-        .skills-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-        }
-
-        .skill-badge {
-            background-color: var(--bg-alt);
-            border: 1px solid #e5e7eb;
-            padding: 10px 25px;
-            border-radius: 30px;
-            font-weight: 600;
-            color: var(--primary-color);
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-
-        /* Projects Section */
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 30px;
-        }
-
-        .project-card {
-            background: #fff;
-            border: 1px solid #e5e7eb;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            transition: transform 0.3s;
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .project-card img {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-            border-bottom: 1px solid #e5e7eb;
-        }
-
-        .project-content {
-            padding: 25px;
-        }
-
-        .project-content h3 {
-            margin-bottom: 12px;
-            font-size: 20px;
-        }
-
-        .project-content p {
-            color: #4b5563;
-            margin-bottom: 20px;
-            font-size: 15px;
-            text-align: justify;
-        }
-
-        .tech-stack {
-            font-size: 14px;
-            font-weight: bold;
-            color: #111827;
-            background: #e0e7ff;
-            padding: 8px 12px;
-            border-radius: 6px;
-            display: inline-block;
-        }
-
-        /* Contact Section */
-        #contact {
-            text-align: center;
-        }
-
-        .contact-info p {
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-
-        .contact-info a {
-            color: var(--primary-color);
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 25px;
-            background: #1f2937;
-            color: #fff;
-            margin-top: 50px;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .hero {
-                flex-direction: column-reverse;
-                text-align: center;
-                padding-top: 140px;
-            }
-            nav {
-                flex-direction: column;
-                padding: 15px;
-            }
-            nav ul {
-                margin-top: 15px;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header & Navigation -->
     <header>
         <nav>
             <a href="#" class="logo">Moch Bachtiar Januar</a>
@@ -300,7 +20,6 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-text">
             <h1>Hallo semua, saya Moch Bachtiar Januar</h1>
@@ -309,12 +28,10 @@
             <a href="cv-Moch Bachtiar Januar.pdf" class="btn btn-outline" target="_blank">Download CV</a>
         </div>
         <div class="hero-img">
-            <!-- Link gambar profil sudah diarahkan ke profil.jpg -->
             <img src="profil.jpg" alt="Foto Moch Bachtiar Januar" onerror="this.src='https://via.placeholder.com/300'">
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about">
         <h2 class="section-title">Tentang Saya</h2>
         <div class="about-text">
@@ -324,7 +41,6 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills">
         <h2 class="section-title">Keahlian</h2>
         <div class="skills-container">
@@ -338,11 +54,9 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects">
         <h2 class="section-title">Project</h2>
         <div class="projects-grid">
-            <!-- Project 1 -->
             <div class="project-card">
                 <img src="foto/project-laravel.png" alt="Sistem Dokumentasi Rapat" onerror="this.src='https://via.placeholder.com/400x250'">
                 <div class="project-content">
@@ -354,7 +68,6 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact">
         <h2 class="section-title">Contact</h2>
         <div class="contact-info">
@@ -364,7 +77,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <p>&copy; Moch Bachtiar Januar</p>
     </footer>
